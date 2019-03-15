@@ -3,6 +3,3 @@ sudo: required
 node_js:
   - "10"
   - "11"
-install:
-  - npm install discordjs
-  - npm install mysql
