@@ -3,3 +3,5 @@ sudo: required
 node_js:
   - "10"
   - "11"
+script:
+  - node main.js
