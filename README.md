@@ -1,5 +1,11 @@
 # Discordbotコードネーム: Silence
 
+
+![](https://img.shields.io/github/release/Fairy-Phy/Silence.svg?label=version&style=flat-square)
+![](https://img.shields.io/github/repo-size/Fairy-Phy/Silence.svg?style=flat-square)
+![](https://img.shields.io/github/license/Fairy-Phy/Silence.svg?color=CB2533&style=flat-square)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/30f12a4ab2d64b4abe4380247c06a53f)](https://www.codacy.com/app/Fairy-Phy/Silence?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fairy-Phy/Silence&amp;utm_campaign=Badge_Grade)
+
 ## **<span style="color: yellow; ">Warning: This README is Japanese only.</span>**
 
 これはDiscordjsで作られたBotです。
@@ -20,7 +26,7 @@ ps. ファイルごとに分けてないのはただ単にめんどくさかっ�
 Super AccountはDBへの追加・削除・変更ができます、Root AccountはOne-time AccountのRoleだけならDB追加できます(ただし削除はできません)、One-timeはconfigで定められた時間だけサーバーに居ることができます、このRoleの場合専用のチャンネルが必要になります。
 
 ## どうやって使用する？
-1. node_modulsごとファイルをDLする
+1. node_modulsごとファイルを[ダウンロード](https://github.com/Fairy-Phy/Silence/archive/master.zip "master.zip")する
 2. サーバーにnodejsとMySQLをlinuxならyumやらaptとかでインスコする(この際各プラットフォームに分かれるので各自ググってください)
 
 この時VPSとかでRAM500MBとかので契約するとMySQLがメモリ足りないって起こるのでそのときはSWAP領域を追加してあげると動きます
