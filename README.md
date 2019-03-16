@@ -26,7 +26,7 @@ ps. ファイルごとに分けてないのはただ単にめんどくさかっ�
 Super AccountはDBへの追加・削除・変更ができます、Root AccountはOne-time AccountのRoleだけならDB追加できます(ただし削除はできません)、One-timeはconfigで定められた時間だけサーバーに居ることができます、このRoleの場合専用のチャンネルが必要になります。
 
 ## どうやって使用する？
-1. node_modulsごとファイルを[ダウンロード](https://github.com/Fairy-Phy/Silence/archive/master.zip "master.zip")する
+1. ファイルを[ダウンロード](https://github.com/Fairy-Phy/Silence/archive/master.zip "master.zip")する
 2. サーバーにnodejsとMySQLをlinuxならyumやらaptとかでインスコする(この際各プラットフォームに分かれるので各自ググってください)
 
 この時VPSとかでRAM500MBとかので契約するとMySQLがメモリ足りないって起こるのでそのときはSWAP領域を追加してあげると動きます
