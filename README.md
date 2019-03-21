@@ -1,9 +1,9 @@
 # Discordbotコードネーム: Silence
 
 
-![](https://img.shields.io/github/release/Fairy-Phy/Silence.svg?label=version&style=flat-square)
-![](https://img.shields.io/github/repo-size/Fairy-Phy/Silence.svg?style=flat-square)
-![](https://img.shields.io/github/license/Fairy-Phy/Silence.svg?color=CB2533&style=flat-square)
+![Bot Version](https://img.shields.io/github/release/Fairy-Phy/Silence.svg?label=version&style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/Fairy-Phy/Silence.svg?style=flat-square)
+[![License](https://img.shields.io/github/license/Fairy-Phy/Silence.svg?color=CB2533&style=flat-square)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/30f12a4ab2d64b4abe4380247c06a53f)](https://www.codacy.com/app/Fairy-Phy/Silence?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fairy-Phy/Silence&amp;utm_campaign=Badge_Grade)
 
 ## **<span style="color: yellow; ">Warning: This README is Japanese only.</span>**
