@@ -16,7 +16,7 @@
 
     dbconf.js
     Codename: silence
-    v1.5.12
+    v1.0
     Twitter: @Fairy_Phy
 */
 const mysql = require('mysql');

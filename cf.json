@@ -6,11 +6,11 @@
 
     "token": "[Discord token]",
 
-    "fpf": "b$",
+    "fpf": "[Public prefix]",
 
-    "spf": "b@",
+    "spf": "[Moderater prefix]",
 
-    "dpf": "b>",
+    "dpf": "[Bot Owner prefix]",
 
     "logc": "[Server log channel ID]",
 
