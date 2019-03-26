@@ -16,14 +16,14 @@
 
     cf.json5
     Codename: silence
-    vβ1.2
+    vβ1.3
     Twitter: @Fairy_Phy
   
 */
 
 {
 
-    version: "v dev2.0 project",
+    version: "v dev2.0 project(20190326)",
 
     token: "",
 
@@ -60,11 +60,11 @@
     //bot role id
     botrid: "",
 
-    //One Time Timeout time(ms) //plan to delete
-    onetimeout: "",
-
-    //DB table name
+    //User DB table name
     dbtable: "",
+
+    //Onetime DB table name
+    ottable: "",
 
     //Administrator role name
     firstrole:"",
@@ -72,17 +72,14 @@
     //Normal role name
     secondrole:"",
 
-    //One Time role name
+    //One Time Moderater role name
     thirdrole:"",
     
-    //One Time Moderater role name
+    //One Time role name
     fourthrole:"",
 
     //Bot Activity
     botact:"",
-
-    //Bot Activity message
-    botactmsg:"",
 
     //Bot Status
     botsta:""
