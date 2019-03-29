@@ -1,3 +1,7 @@
+# **これはバージョン1.xブランチです！**
+
+## 最新バージョンは[master](https://github.com/Fairy-Phy/Silence/tree/master)にあります！
+
 # Discordbotコードネーム: Silence
 
 
