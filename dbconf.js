@@ -16,12 +16,12 @@
 
     dbconf.js
     Codename: silence
-    v1.0
+    v1.1
     Twitter: @Fairy_Phy
 */
 const mysql = require('mysql');
 
-const dbConfig = {
+const conf = {
     host : 'localhost',
     user : '[User]',
     password : '[Password]',
@@ -29,6 +29,6 @@ const dbConfig = {
     multipleStatements: true
 };
 
-const connection = mysql.createConnection(dbConfig);
+const connection = mysql.createConnection(conf);
 
 module.exports = connection;
