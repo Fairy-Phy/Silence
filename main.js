@@ -16,7 +16,7 @@
 
     main.js
     Codename: silence
-    v2.0.2
+    v2.0.3
     Twitter: @Fairy_Phy
     
     Warning: Because it is Japanese Bot,To correspond to the language you are using,Please modify the code yourself.
@@ -99,6 +99,8 @@ client.on('message', message => {
 
     let who = `${message.author.tag}が`;
 
+    let ident = message.author.tag;
+
     if (message.isMentioned(client.user)) {
 
         if (su) {
@@ -129,8 +131,8 @@ client.on('message', message => {
                                     })
                                         .then((collected) => {
                                             collected.tap(message => {
-                                                if (!message.member.roles.has(surole.id)) {
-                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                if (ident !== message.author.tag) {
+                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                     return;
                                                 };
@@ -178,8 +180,8 @@ client.on('message', message => {
                                         })
                                 })*/
                             collected.tap(message => {
-                                if (!message.member.roles.has(surole.id)) {
-                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                if (ident !== message.author.tag) {
+                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                     return;
                                 };
@@ -251,8 +253,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(surole.id)) {
-                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -279,8 +281,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -294,8 +296,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -355,8 +357,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(surole.id)) {
-                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -373,8 +375,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -388,8 +390,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -403,15 +405,15 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(surole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
                                                                                                                             let time = message.content;
                                                                                                                             //必ず時間指定(24時間以内)
                                                                                                                             if (isFinite(time) && time > 0 && time < 25) {
-                                                                                                                                connection.query(`SELECT * FROM ${cf.ottable} WHERE name = ${name}`, function (erro, rowso) {
+                                                                                                                                connection.query(`SELECT * FROM ${cf.ottable} WHERE name = '${name}'`, function (erro, rowso) {
                                                                                                                                     if (erro) throw erro;
                                                                                                                                     if (rowso.length > 0) {
                                                                                                                                         rowso.forEach((rowo) => {
@@ -494,8 +496,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -509,8 +511,8 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(surole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
@@ -622,8 +624,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -637,13 +639,13 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
                                                                                                         let name = message.content;
-                                                                                                        connection.query(`SELECT * FROM ${cf.ottable} WHERE name = ${name}`, function (err, rows) {
+                                                                                                        connection.query(`SELECT * FROM ${cf.ottable} WHERE name = '${name}'`, function (err, rows) {
                                                                                                             if (err) throw err;
                                                                                                             if (rows.length > 0) {
                                                                                                                 rows.forEach((row) => {
@@ -679,8 +681,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -739,7 +741,7 @@ client.on('message', message => {
                                                                 `)
                                                                 rows.forEach((row) => {
                                                                     message.member.send(`
-                                                                    ┃${row.name} -> ${row.uuid} -> ${row.time * 3600000} -> ${trueorfalse[row.tof]}┃
+                                                                    ┃${row.name} -> ${row.uuid} -> ${row.time / 3600000} -> ${trueorfalse[row.tof]}┃
                                                                     `)
                                                                 })
                                                                 message.member.send(`
@@ -762,8 +764,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -777,8 +779,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -792,13 +794,13 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(surole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
                                                                                                                             let afname = message.content;
-                                                                                                                            connection.query(`SELECT * FROM ${cf.ottable} WHERE name = ${bfname}`, function (err, rows) {
+                                                                                                                            connection.query(`SELECT * FROM ${cf.ottable} WHERE name = '${bfname}'`, function (err, rows) {
                                                                                                                                 if (err) throw err;
                                                                                                                                 if (rows.length > 0) {
                                                                                                                                     rows.forEach((row) => {
@@ -845,8 +847,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -860,8 +862,8 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(surole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
@@ -931,8 +933,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -946,8 +948,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -961,8 +963,8 @@ client.on('message', message => {
                                                                                                             })
                                                                                                                 .then((collected) => {
                                                                                                                     collected.tap(message => {
-                                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                                        if (ident !== message.author.tag) {
+                                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                             return;
                                                                                                                         };
@@ -982,7 +984,7 @@ client.on('message', message => {
                                                                                                                                                         let timems = time * 3600000;
                                                                                                                                                         //小数点以下を可能にするため
                                                                                                                                                         let timemsint = Math.floor(timems);
-                                                                                                                                                        connection.query(`INSERT INTO ${cf.ottable}(name, uuid, time, tof) Values('${name}', ${id}, ${timemsint}, 1)`, function (errr, ress) {
+                                                                                                                                                        connection.query(`INSERT INTO ${cf.ottable}(name, uuid, time, tof) Values('${name}', ${id}, '${timemsint}', 1)`, function (errr, ress) {
                                                                                                                                                             if (errr) throw errr;
                                                                                                                                                             message.channel.send(`name: ${name} \nID: ${id} \nTime: ${time}時間をデータベースに追加しました`)
                                                                                                                                                                 .then(message => console.log(`${who}onetime-addの実行${date}`))
@@ -1062,8 +1064,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -1090,8 +1092,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -1188,8 +1190,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(surole.id)) {
-                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -1203,8 +1205,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -1272,8 +1274,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -1287,8 +1289,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -1349,8 +1351,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -1364,8 +1366,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -1583,8 +1585,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -1598,8 +1600,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -1613,8 +1615,8 @@ client.on('message', message => {
                                                                                                             })
                                                                                                                 .then((collected) => {
                                                                                                                     collected.tap(message => {
-                                                                                                                        if (!message.member.roles.has(surole.id)) {
-                                                                                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                                        if (ident !== message.author.tag) {
+                                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                             return;
                                                                                                                         };
@@ -1738,8 +1740,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(surole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -1766,8 +1768,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(surole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -1864,8 +1866,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(surole.id)) {
-                                                            message.reply(`あなたは${rolenames[0]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -1933,24 +1935,8 @@ client.on('message', message => {
                     })
                         .then((collected) => {
                             collected.tap(message => {
-                                //rt otm 専用のため
-                                /*if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                    return;
-                                }
-                                if (!message.member.roles.has(otmrole.id)) {
-                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                    return;
-                                };*/
-                                if (!message.member.roles.has(rtrole.id)) {
-                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                    return;
-                                }
-                                if (!message.member.roles.has(otmrole.id)) {
-                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                if (ident !== message.author.tag) {
+                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                     return;
                                 };
@@ -2022,13 +2008,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                            return;
-                                                        }
-                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -2055,13 +2036,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                    return;
-                                                                                }
-                                                                                if (!message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -2075,13 +2051,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                        console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                        return;
-                                                                                                    }
-                                                                                                    if (!message.member.roles.has(otmrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -2141,13 +2112,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                            return;
-                                                        }
-                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -2164,13 +2130,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                    return;
-                                                                                }
-                                                                                if (!message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -2184,13 +2145,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -2204,20 +2160,15 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                                                console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                                                return;
-                                                                                                                            }
-                                                                                                                            if (!message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
                                                                                                                             let time = message.content;
                                                                                                                             //必ず時間指定(24時間以内)
                                                                                                                             if (isFinite(time) && time > 0 && time < 25) {
-                                                                                                                                connection.query(`SELECT * FROM ${cf.ottable} WHERE name = ${name}`, function (erro, rowso) {
+                                                                                                                                connection.query(`SELECT * FROM ${cf.ottable} WHERE name = '${name}'`, function (erro, rowso) {
                                                                                                                                     if (erro) throw erro;
                                                                                                                                     if (rowso.length > 0) {
                                                                                                                                         rowso.forEach((rowo) => {
@@ -2300,13 +2251,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -2320,13 +2266,8 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                                                console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                                                return;
-                                                                                                                            }
-                                                                                                                            if (!message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
@@ -2438,13 +2379,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                    return;
-                                                                                }
-                                                                                if (!message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -2458,18 +2394,13 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
                                                                                                         let name = message.content;
-                                                                                                        connection.query(`SELECT * FROM ${cf.ottable} WHERE name = ${name}`, function (err, rows) {
+                                                                                                        connection.query(`SELECT * FROM ${cf.ottable} WHERE name = '${name}'`, function (err, rows) {
                                                                                                             if (err) throw err;
                                                                                                             if (rows.length > 0) {
                                                                                                                 rows.forEach((row) => {
@@ -2505,13 +2436,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -2570,7 +2496,7 @@ client.on('message', message => {
                                                                 `)
                                                                 rows.forEach((row) => {
                                                                     message.member.send(`
-                                                                    ┃${row.name} -> ${row.uuid} -> ${row.time * 3600000} -> ${trueorfalse[row.tof]}┃
+                                                                    ┃${row.name} -> ${row.uuid} -> ${row.time / 3600000} -> ${trueorfalse[row.tof]}┃
                                                                     `)
                                                                 })
                                                                 message.member.send(`
@@ -2593,13 +2519,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                    return;
-                                                                                }
-                                                                                if (!message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -2613,13 +2534,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -2633,18 +2549,13 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                                                console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                                                return;
-                                                                                                                            }
-                                                                                                                            if (!message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
                                                                                                                             let afname = message.content;
-                                                                                                                            connection.query(`SELECT * FROM ${cf.ottable} WHERE name = ${bfname}`, function (err, rows) {
+                                                                                                                            connection.query(`SELECT * FROM ${cf.ottable} WHERE name = '${bfname}'`, function (err, rows) {
                                                                                                                                 if (err) throw err;
                                                                                                                                 if (rows.length > 0) {
                                                                                                                                     rows.forEach((row) => {
@@ -2691,13 +2602,8 @@ client.on('message', message => {
                                                                                             })
                                                                                                 .then((collected) => {
                                                                                                     collected.tap(message => {
-                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                        if (ident !== message.author.tag) {
+                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                             return;
                                                                                                         };
@@ -2711,13 +2617,8 @@ client.on('message', message => {
                                                                                                                 })
                                                                                                                     .then((collected) => {
                                                                                                                         collected.tap(message => {
-                                                                                                                            if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                                                console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                                                return;
-                                                                                                                            }
-                                                                                                                            if (!message.member.roles.has(otmrole.id)) {
-                                                                                                                                message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                                            if (ident !== message.author.tag) {
+                                                                                                                                message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                                 console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                                 return;
                                                                                                                             };
@@ -2787,13 +2688,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                    return;
-                                                                                }
-                                                                                if (!message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -2807,13 +2703,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                        console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                        return;
-                                                                                                    }
-                                                                                                    if (!message.member.roles.has(otmrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -2827,13 +2718,8 @@ client.on('message', message => {
                                                                                                             })
                                                                                                                 .then((collected) => {
                                                                                                                     collected.tap(message => {
-                                                                                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                                            return;
-                                                                                                                        }
-                                                                                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                                                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                                        if (ident !== message.author.tag) {
+                                                                                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                                             return;
                                                                                                                         };
@@ -2853,7 +2739,7 @@ client.on('message', message => {
                                                                                                                                                         let timems = time * 3600000;
                                                                                                                                                         //小数点以下を可能にするため
                                                                                                                                                         let timemsint = Math.floor(timems);
-                                                                                                                                                        connection.query(`INSERT INTO ${cf.ottable}(name, uuid, time, tof) Values('${name}', ${id}, ${timemsint}, 1)`, function (errr, ress) {
+                                                                                                                                                        connection.query(`INSERT INTO ${cf.ottable}(name, uuid, time, tof) Values('${name}', ${id}, '${timemsint}', 1)`, function (errr, ress) {
                                                                                                                                                             if (errr) throw errr;
                                                                                                                                                             message.channel.send(`name: ${name} \nID: ${id} \nTime: ${time}時間をデータベースに追加しました`)
                                                                                                                                                                 .then(message => console.log(`${who}onetime-addの実行${date}`))
@@ -2933,13 +2819,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                    return;
-                                                                                }
-                                                                                if (!message.member.roles.has(otmrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -2966,13 +2847,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                                                                        console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                                                                        return;
-                                                                                                    }
-                                                                                                    if (!message.member.roles.has(otmrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -3071,13 +2947,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(rtrole.id) || !message.member.roles.has(otmrole.id)) {
-                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
-                                                            console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                                            return;
-                                                        }
-                                                        if (!message.member.roles.has(otmrole.id)) {
-                                                            message.reply(`あなたは${rolenames[1]} か ${rolenames[2]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -3134,8 +3005,7 @@ client.on('message', message => {
                                 \n<メニュー>
                                 \n1, 各実行コマンドの説明
                                 \n2, ping, ver等の雑用コマンド
-                                \n3, 認定証の発行(ver3.0から選べるようになります)
-                                \n4, Q % A`)
+                                \n3, Q % A`)
                 .then(() => {
                     message.channel.awaitMessages(response => response.content === ' ' || ' ', {
                         max: 1,
@@ -3144,14 +3014,8 @@ client.on('message', message => {
                     })
                         .then((collected) => {
                             collected.tap(message => {
-                                //ot 専用のため
-                                /*if (!message.member.roles.has(otrole.id)) {
-                                    message.reply(`あなたは${rolenames[3]}ではないため応答できません、作業を中止します。`);
-                                    console.log(`${message.author.tag}がコマンドを入力したため中止`);
-                                    return;
-                                };*/
-                                if (!message.member.roles.has(otrole.id)) {
-                                    message.reply(`あなたは${rolenames[3]}ではないため応答できません、作業を中止します。`);
+                                if (ident !== message.author.tag) {
+                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                     return;
                                 };
@@ -3223,8 +3087,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(otrole.id)) {
-                                                            message.reply(`あなたは${rolenames[3]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -3251,8 +3115,8 @@ client.on('message', message => {
                                                                     })
                                                                         .then((collected) => {
                                                                             collected.tap(message => {
-                                                                                if (!message.member.roles.has(otrole.id)) {
-                                                                                    message.reply(`あなたは${rolenames[3]}ではないため応答できません、作業を中止します。`);
+                                                                                if (ident !== message.author.tag) {
+                                                                                    message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                     console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                     return;
                                                                                 };
@@ -3266,8 +3130,8 @@ client.on('message', message => {
                                                                                         })
                                                                                             .then((collected) => {
                                                                                                 collected.tap(message => {
-                                                                                                    if (!message.member.roles.has(otrole.id)) {
-                                                                                                        message.reply(`あなたは${rolenames[3]}ではないため応答できません、作業を中止します。`);
+                                                                                                    if (ident !== message.author.tag) {
+                                                                                                        message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                                                                         console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                                                                         return;
                                                                                                     };
@@ -3312,11 +3176,6 @@ client.on('message', message => {
                                         })
                                 }
                                 else if (message.content == 3) {
-                                    message.channel.send(`まだ作られていません！カミングスーン！`);
-                                    return;
-
-                                }
-                                else if (message.content == 4) {
                                     message.channel.send(`<Q & A>(タイムアウト1分)
                                                         \n1, ユーザーのIDはどこで見るの？
                                                         \n2, なんで特定のコマンドは認証が必要なの？
@@ -3329,8 +3188,8 @@ client.on('message', message => {
                                             })
                                                 .then((collected) => {
                                                     collected.tap(message => {
-                                                        if (!message.member.roles.has(otrole.id)) {
-                                                            message.reply(`あなたは${rolenames[3]}ではないため応答できません、作業を中止します。`);
+                                                        if (ident !== message.author.tag) {
+                                                            message.reply(`あなたは${ident}ではないため応答できません、作業を中止します。`);
                                                             console.log(`${message.author.tag}がコマンドを入力したため中止`);
                                                             return;
                                                         };
@@ -3361,7 +3220,7 @@ client.on('message', message => {
                                         });
 
                                 }
-                                else if (message.content > 4 || message.content == 0) {
+                                else if (message.content > 3 || message.content == 0) {
                                     message.channel.send(`番号が違います！`);
                                     console.log(`${who}対話の実行失敗${date}`);
                                     return;
@@ -3712,11 +3571,13 @@ client.on('guildMemberAdd', member => {
                     });
                     var channel = client.channels.find(ch => ch.id === `${cf.otc}`);
 
-                    let timeoutms = row.time / 3600000;
+                    let timeoutms = rowo.time / 3600000;
+
+                    let time = rowo.time;
 
                     channel.send(`${member} あなたは現在有効化されています、${timeoutms}時間後自動的に無効化されます。`)
                         .then(msg => {
-                            msg.delete(row.time);
+                            msg.delete(time);
                         })
                         .catch(console.error);
                     let timeout = new Promise((resolve, reject) => {
@@ -3733,7 +3594,7 @@ client.on('guildMemberAdd', member => {
                                         .catch(console.error);
                                 })
                                 .catch(console.error);
-                        }, row.time);
+                        }, time);
                     })
                     timeout.catch(() => {
                         console.error('エラー発生！')
@@ -3798,21 +3659,42 @@ client.on("guildMemberRemove", member => {
         connection.query(`SELECT * FROM ${cf.dbtable} WHERE uuid = ${member.user.id}`, function (err, rows) {
             if (err) throw err;
             connection.query(`SELECT * FROM ${cf.ottable} WHERE uuid = ${member.user.id}`, function (erro, rowso) {
-            if (erro) throw erro;
-            if (rows.length > 0) {
-                rows.forEach((row) => {
-                    connection.query(`DELETE FROM ${cf.dbtable} WHERE uuid = ${member.user.id}`, function (errr, ress) {
+                if (erro) throw erro;
+                if (rows.length > 0) {
+                    rows.forEach((row) => {
+                        connection.query(`DELETE FROM ${cf.dbtable} WHERE uuid = ${member.user.id}`, function (errr, ress) {
+                            if (errr) throw errr;
+                        })
+                        member.ban(`サーバーを抜けたため`)
+                            .then(() => {
+                                console.log(`${member.user.tag}はサーバーを抜けました${rolenames[row.role]}${date}`)
+                            })
+                            .catch(console.error);
+                        const channel = client.channels.find(ch => ch.id === `${cf.logc}`);
+                        channel.send({
+                            embed: {
+                                title: "BANされました",
+                                description: `名前: ${member.user.tag}\nID: ${member.user.id}`,
+                                color: 16711680,
+                                timestamp: new Date(),
+                                footer: {
+                                    text: `${client.user.username} Bot`
+                                },
+                                author: {
+                                    name: "サーバーを抜けました",
+                                }
+                            }
+                        });
+                    });
+                }
+                else if (rowso.length > 0) {
+                    connection.query(`DELETE FROM ${cf.ottable} WHERE uuid = ${member.user.id}`, function (errr, ress) {
                         if (errr) throw errr;
                     })
-                    member.ban(`サーバーを抜けたため`)
-                        .then(() => {
-                            console.log(`${member.user.tag}はサーバーを抜けました${rolenames[row.role]}${date}`)
-                        })
-                        .catch(console.error);
                     const channel = client.channels.find(ch => ch.id === `${cf.logc}`);
                     channel.send({
                         embed: {
-                            title: "BANされました",
+                            title: "抜けました\n再度招待したい場合もう一度\nDBに登録して招待してください。",
                             description: `名前: ${member.user.tag}\nID: ${member.user.id}`,
                             color: 16711680,
                             timestamp: new Date(),
@@ -3824,46 +3706,25 @@ client.on("guildMemberRemove", member => {
                             }
                         }
                     });
-                });
-            }
-            else if (rowso.length > 0) {
-                connection.query(`DELETE FROM ${cf.ottable} WHERE uuid = ${member.user.id}`, function (errr, ress) {
-                    if (errr) throw errr;
-                })
-                const channel = client.channels.find(ch => ch.id === `${cf.logc}`);
-                channel.send({
-                    embed: {
-                        title: "抜けました\n再度招待したい場合もう一度\nDBに登録して招待してください。",
-                        description: `名前: ${member.user.tag}\nID: ${member.user.id}`,
-                        color: 16711680,
-                        timestamp: new Date(),
-                        footer: {
-                            text: `${client.user.username} Bot`
-                        },
-                        author: {
-                            name: "サーバーを抜けました",
+                }
+                else {
+                    const channel = client.channels.find(ch => ch.id === `${cf.logc}`);
+                    channel.send({
+                        embed: {
+                            title: "サーバーに登録されていないかデータベース上から削除されました",
+                            description: `名前: ${member.user.tag}\nID: ${member.user.id}`,
+                            color: 16711680,
+                            timestamp: new Date(),
+                            footer: {
+                                text: `${client.user.username} Bot`
+                            },
+                            author: {
+                                name: "サーバーを抜けました",
+                            }
                         }
-                    }
-                });
-            }
-            else {
-                const channel = client.channels.find(ch => ch.id === `${cf.logc}`);
-                channel.send({
-                    embed: {
-                        title: "サーバーに登録されていないかデータベース上から削除されました",
-                        description: `名前: ${member.user.tag}\nID: ${member.user.id}`,
-                        color: 16711680,
-                        timestamp: new Date(),
-                        footer: {
-                            text: `${client.user.username} Bot`
-                        },
-                        author: {
-                            name: "サーバーを抜けました",
-                        }
-                    }
-                });
-            }
-        })
+                    });
+                }
+            })
         });
     }
     else {
@@ -4164,7 +4025,7 @@ client.on('message', message => {
                 `)
                 rows.forEach((row) => {
                     message.member.send(`
-                    ┃${row.name} -> ${row.uuid} -> ${row.time * 3600000} -> ${row.tof}┃
+                    ┃${row.name} -> ${row.uuid} -> ${row.time / 3600000} -> ${row.tof}┃
                     `)
                 })
                 message.member.send(`
