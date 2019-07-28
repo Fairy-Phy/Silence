@@ -23,9 +23,7 @@ main.jsの他にコンフィグファイルとしてcf.jsonがあるのでそち
 ## どういうBot？
 このBotはDBにDiscordのユーザーIDを追加することでホワイトリスト方式で招待できるかできないかを判別するBotです
 
-ちなみにBotの追加も判別で追加できるようにしてあります、モデレーターRole(プログラム文ではSu)と通常Role(Rt)、パブリックチャンネルのモデレーターRole(OtM)、一時的に使えるRole(Ot)の4種類に分けられています
-
-SuはDBへの追加・削除・変更ができます、RtとOtMはOne-time AccountのRoleだけならDB追加できます、Otはtimeで定められた時間だけサーバーに居ることができます、このRoleの場合専用のチャンネルが必要になります。
+ちなみにBotの追加も判別で追加できるようにしてあります、モデレーターRole(プログラム文ではSu)と通常Role(Rt)の2種類に分けられています
 
 ## どうやって使用する？
 1. ファイルを[ダウンロード](https://github.com/Fairy-Phy/Silence/archive/master.zip "master.zip")する
@@ -43,8 +41,6 @@ CREATE DATABASE 適当なDB名;
 USE 作ったdb名;
 
 CREATE TABLE 適当なテーブル名(name longtext, uuid longtext, role int);
-
-CREATE TABLE 適当なテーブル名(name longtext, uuid longtext, time int, tof int);
 
 CREATE USER 適当なユーザー名 IDENTIFIED WITH mysql_native_password BY `適当なパスワード`;
 
