@@ -4,7 +4,7 @@
 ![](https://img.shields.io/github/release/Fairy-Phy/Silence.svg?label=version&style=flat-square)
 ![](https://img.shields.io/github/repo-size/Fairy-Phy/Silence.svg?style=flat-square)
 ![](https://img.shields.io/github/license/Fairy-Phy/Silence.svg?color=CB2533&style=flat-square)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/30f12a4ab2d64b4abe4380247c06a53f)](https://www.codacy.com/app/Fairy-Phy/Silence?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fairy-Phy/Silence&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/fairy-phy/silence/badge/master)](https://www.codefactor.io/repository/github/fairy-phy/silence/overview/master)
 
 ## **<span style="color: yellow; ">Warning: This README is Japanese only.</span>**
 
@@ -13,8 +13,6 @@
 動かすにはnodejs、Mysqlが必要です(各自でnpmプラグインをインストールする場合Discord.js, mysqlが必要です)
 
 誰も使わないと思いますが自由に使っても構いません
-
-main.jsの他にコンフィグファイルとしてcf.jsonがあるのでそちらと合わせてご利用ください
 
 私のDiscord鯖用に作ってるのでメッセージ等はコードをいじって変更したほうがいいです
 
@@ -50,7 +48,7 @@ GRANT ALL PRIVILEGES ON `作成したDB名`.* TO `作成したユーザー名`@`
 4. dbconf.jsにさっき作ったユーザー名・パスワード・DB名を入れて保存します(この時rootじゃなくて違うユーザーを新たに作ることをおすすめします)
 5. cf.jsonに各IDやらなんやらを入れて保存します(焼けくそ)
 6. npm install pm2を入れても入れなくてもいいですが入れておいたほうがいいです
-7. pm2入れているならpm2 start main.js  nodejsならnode main.jsで起動できます
+7. pm2入れているならpm2 start Botrun.js  nodejsならnode Botrun.jsで起動できます
 
 ひどい解説だけどすいません...m(_ _)m
 

@@ -16,7 +16,7 @@
 
     Admin_cmd.js
     Codename: silence
-    v 1.0
+    v 1.0.1
     Twitter: @Fairy_Phy
     
     Warning: Because it is Japanese Bot,To correspond to the language you are using,Please modify the code yourself.
@@ -41,7 +41,7 @@ module.exports =
             let prec = message.content.slice(0, cf.spf.length).trim().split(/ +/g),
                 preco = prec.shift().toLowerCase();
 
-            let precheck = cf.fpf == preco;
+            let precheck = cf.spf == preco;
 
             if (!precheck) return;
 

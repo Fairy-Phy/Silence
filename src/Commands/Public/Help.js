@@ -16,7 +16,7 @@
 
     Help.js
     Codename: silence
-    v 1.0
+    v 1.0.1
     Twitter: @Fairy_Phy
     
     Warning: Because it is Japanese Bot,To correspond to the language you are using,Please modify the code yourself.
@@ -30,7 +30,7 @@ module.exports =
             message.delete();
             message.reply(`DMをご確認ください！`);
             message.member.send(`
-                            一般コマンド\(プレフィックスは ${cf.fpf} です\)
+                            一般コマンド(プレフィックスは ${cf.fpf} です)
                             \n\`\`\`
                             \n${cf.fpf}ping => pingを測ります
                             \n${cf.fpf}ver => Botのバージョンを表示します
@@ -42,7 +42,7 @@ module.exports =
                 .catch(console.error);
             if (rolehas[0]) {
                 message.member.send(`
-                                SUコマンド\(プレフィックスは ${cf.spf} です\)
+                                SUコマンド(プレフィックスは ${cf.spf} です)
                                 \n\`\`\`
                                 \n${cf.spf}db-find [ID] => データベース上にIDが登録されているか確認します
                                 \n${cf.spf}db-list => データベースに登録されている名前とIDをリストにして表示します
@@ -56,7 +56,7 @@ module.exports =
             const Bw = message.author.id == cf.bwid;
             if (Bw) {
                 message.member.send(`
-                                Botownデバッグコマンド\(プレフィックスは ${cf.dpf} です\)
+                                Botownデバッグコマンド(プレフィックスは ${cf.dpf} です)
                                 \n\`\`\`
                                 \n${cf.dpf}restart => Botの再起動
                                 \n${cf.dpf}logout => Botの終了

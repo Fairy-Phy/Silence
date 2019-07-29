@@ -58,7 +58,6 @@ module.exports =
                                             if (rowso.length > 0) {
                                                 connection.query(`INSERT INTO ${cf.dbtable}(name, uuid, role) Values('${name}', ${id}, ${role})`, (errr, ress) => {
                                                     if (errr) throw errr;
-                                                    let rolecode =
                                                         message.channel.send(`名前: ${name}\nID: ${id}\nrole: ${rolenames[role]}\nをデータベースに追加しました`)
                                                             .then(message => console.log(`${who}${cmd}の実行${date}`))
                                                             .catch(console.error);
