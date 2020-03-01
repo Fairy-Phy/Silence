@@ -1,10 +1,12 @@
-# Discordbotコードネーム: Silence
+# Discordbot Codename: Silence
 
 
 ![](https://img.shields.io/github/release/Fairy-Phy/Silence.svg?label=version&style=flat-square)
 ![](https://img.shields.io/github/repo-size/Fairy-Phy/Silence.svg?style=flat-square)
 ![](https://img.shields.io/github/license/Fairy-Phy/Silence.svg?color=CB2533&style=flat-square)
 [![CodeFactor](https://www.codefactor.io/repository/github/fairy-phy/silence/badge/master)](https://www.codefactor.io/repository/github/fairy-phy/silence/overview/master)
+
+## **<span style="color: red;">This project has closed. Bugs will not be fixed in the future.</span>**
 
 ## **<span style="color: yellow; ">Warning: This README is Japanese only.</span>**
 
