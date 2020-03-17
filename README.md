@@ -6,9 +6,11 @@
 ![](https://img.shields.io/github/license/Fairy-Phy/Silence.svg?color=CB2533&style=flat-square)
 [![CodeFactor](https://www.codefactor.io/repository/github/fairy-phy/silence/badge/master)](https://www.codefactor.io/repository/github/fairy-phy/silence/overview/master)
 
-## **<span style="color: red;">This project has closed. Bugs will not be fixed in the future.</span>**
+## **This project has closed. Bugs will not be fixed in the future.**
 
-## **<span style="color: yellow; ">Warning: This README is Japanese only.</span>**
+## **It has serious vulnerabilities and bugs! Instead, a new project is currently in progress! See [Avespoir_Project/Avespoir](https://gitlab.com/Avespoir_Project/Avespoir)**
+
+## **Warning: This README is Japanese only.**
 
 これはDiscordjsで作られたBotです。
 
